@@ -10,7 +10,7 @@ const user = require('../models/userModel')
 const role = require('../models/rolModel')
 const role_user = require('../models/role_user')
 
-const AppError = require('../utils/apiError')
+const AppError = require('../utils/AppError')
 const connection = require('../config/connection')
 
 

@@ -6,7 +6,7 @@ const isUser = require('../middlewares/isUser');
 //routes of the controllers
 
 router.get('/', isUser,(req, res) => {
-    res.send('Welcome to the API')
+    res.send('Bienvenido a la api')
 })
 
 router.use('/api/product', require('./productoRoute'));

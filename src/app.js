@@ -26,8 +26,6 @@ async function startServer() {
  //Routes
   app.use('', require('./routes/index'));
 
-  //models
-  require('./models/producto');
 
   // Connect to database
   try {

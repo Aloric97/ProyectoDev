@@ -3,9 +3,6 @@ const {DataTypes}= require('sequelize')
 
 const connection= require('../config/connection')
 
-//constants values
-const  IVA = 21
-
 
 const producto= connection.define('producto',{
     id_producto:{
@@ -41,7 +38,7 @@ const producto= connection.define('producto',{
     },
     iva:{
         type:DataTypes.DECIMAL(3,2),
-        allowNull:false,
+        defaultValue:0.21,
         
     },
     imagen:{
@@ -52,7 +49,6 @@ const producto= connection.define('producto',{
         timestamps:false
 })
 
-producto.iva = IVA;
 
 
 module.exports= producto

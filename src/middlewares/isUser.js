@@ -26,7 +26,7 @@ const isCommon = async (req, res, next) => {
         return res.status(403).json({ message: "Debe tener el rol de usuario!" })
       }
     } catch (error) {
-      return res.status(500).send({ message:'Debe estar logueado'});
+      return res.status(403).send({ message:'Debe estar logueado'});
     }
 };
 
