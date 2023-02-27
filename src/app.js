@@ -25,6 +25,7 @@ async function startServer() {
 
  //Routes
   app.use('', require('./routes/index'));
+  app.use('', require('./middlewares/resetPassword'));
 
 
   // Connect to database

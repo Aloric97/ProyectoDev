@@ -10,7 +10,7 @@ const {DB_NAME,DB_USER,DB_PASSWORD,DB_HOST,DB_DIALECT}= require('../config/env')
 const connection = new Sequelize(
     DB_NAME, 
     DB_USER, 
-    DB_PASSWORD, {
+    'etesqcw08k', {
     host: DB_HOST,
     dialect: DB_DIALECT,
     port:3306,
